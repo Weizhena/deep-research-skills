@@ -2,7 +2,14 @@
 
 > Inspired by [RhinoInsight: Improving Deep Research through Control Mechanisms for Model Behavior and Context](https://arxiv.org/abs/2511.18743)
 
-A structured research workflow skill for Claude Code, supporting two-phase research: outline generation and deep investigation.
+A structured research workflow skill for Claude Code, supporting two-phase research: outline generation (extensible) and deep investigation. Human-in-the-loop design ensures precise control at every stage.
+
+## Use Cases
+
+- **Academic Research**: Paper surveys, benchmark reviews, literature analysis
+- **Technical Research**: Technology comparison, framework evaluation, tool selection
+- **Market Research**: Competitor analysis, industry trends, product comparison
+- **Due Diligence**: Company research, investment analysis, risk assessment
 
 ## Commands
 
