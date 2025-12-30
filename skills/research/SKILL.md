@@ -29,6 +29,7 @@ description: 对目标话题进行初步调研，生成调研outline。用于学
 - items: 调研对象列表
 - execution:
   - batch_size: 并行agent数量（默认5）
+  - items_per_agent: 每个agent调研项目数（默认1，需AskUserQuestion确认）
   - output_dir: 结果输出目录（默认./results）
 
 **fields.yaml**（字段定义）：

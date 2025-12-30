@@ -72,6 +72,7 @@ items:
     source: "source info"
 execution:
   batch_size: 5          # parallel agents (default: 5)
+  items_per_agent: 1     # items per agent (default: 1)
   output_dir: "./results" # output directory (default: ./results)
 ```
 
