@@ -24,6 +24,7 @@ allowed-tools: Bash, Read, Write, Glob, WebSearch, Task
 - **硬约束**：仅传入item相关信息和输出路径
 - **硬约束**：agent必须自行读取 `{topic}/fields.yaml` 获取字段定义
 - **硬约束**：禁止在prompt中直接嵌入字段定义
+- **硬约束**：不确定的字段值标注【不确定】，并在JSON末尾uncertain数组中列出该字段名
 - 输出结构化JSON到output_dir
 
 ### Step 4: 等待与监控

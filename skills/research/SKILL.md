@@ -35,6 +35,7 @@ description: 对目标话题进行初步调研，生成调研outline。用于学
 **fields.yaml**（字段定义）：
 - 字段分类和定义
 - 每个字段的name、description、detail_level
+- uncertain: 不确定字段列表（保留字段，deep阶段自动填充）
 
 ### Step 5: 输出并确认
 - 创建目录: `./{topic_slug}/`
