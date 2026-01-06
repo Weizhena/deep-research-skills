@@ -19,6 +19,9 @@ A structured research workflow skill for Claude Code, supporting two-phase resea
 # English version
 cp -r skills/research-en ~/.claude/skills/research
 
+# Chinese version
+cp -r skills/research-zh ~/.claude/skills/research
+
 # Required: Install agent
 cp agents/web-search-agent.md ~/.claude/agents/
 ```

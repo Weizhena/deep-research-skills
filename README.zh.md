@@ -19,6 +19,9 @@ Claude Code 的结构化调研工作流技能，支持两阶段调研：outline�
 # 中文版
 cp -r skills/research-zh ~/.claude/skills/research
 
+# 英文版
+cp -r skills/research-en ~/.claude/skills/research
+
 # 必需：安装agent
 cp agents/web-search-agent.md ~/.claude/agents/
 ```
