@@ -19,13 +19,15 @@ A structured research workflow skill for Claude Code, supporting two-phase resea
 
 ### Commands
 
+> **Note**: Use `run /research` instead of `/research` directly, as slash commands conflict with built-in commands.
+
 | Command | Description |
 |---------|-------------|
-| `/research` | Generate research outline with items and fields |
-| `/research/add-items` | Add more items to existing outline |
-| `/research/add-fields` | Add more fields to existing outline |
-| `/research/deep` | Deep research each item with parallel agents |
-| `/research/report` | Generate markdown report from JSON results |
+| `run /research` | Generate research outline with items and fields |
+| `run /research/add-items` | Add more items to existing outline |
+| `run /research/add-fields` | Add more fields to existing outline |
+| `run /research/deep` | Deep research each item with parallel agents |
+| `run /research/report` | Generate markdown report from JSON results |
 
 ### Installation
 
@@ -46,7 +48,7 @@ cp agents/web-search-agent.md ~/.claude/agents/
 
 #### Phase 1: Generate Outline
 ```
-/research <topic>
+run /research <topic>
 ```
 - Model knowledge generates initial items and field framework
 - Web search supplements latest items
@@ -55,7 +57,7 @@ cp agents/web-search-agent.md ~/.claude/agents/
 
 #### Phase 2: Deep Research
 ```
-/research/deep
+run /research/deep
 ```
 - Parallel agents research each item (batch_size configurable)
 - Each agent reads fields.yaml and outputs structured JSON
@@ -64,13 +66,13 @@ cp agents/web-search-agent.md ~/.claude/agents/
 
 #### Optional: Expand Outline
 ```
-/research/add-items    # Add research targets via user input or web search
-/research/add-fields   # Add field definitions
+run /research/add-items    # Add research targets via user input or web search
+run /research/add-fields   # Add field definitions
 ```
 
 #### Phase 3: Generate Report
 ```
-/research/report
+run /research/report
 ```
 - Generates Python script to convert JSON to markdown
 - User selects summary fields for TOC
@@ -94,13 +96,15 @@ Claude Code 的结构化调研工作流技能，支持两阶段调研：outline�
 
 ### 命令
 
+> **注意**：使用 `run /research` 而非直接 `/research`，因为斜杠命令与内置命令冲突。
+
 | 命令 | 描述 |
 |------|------|
-| `/research` | 生成包含items和fields的调研outline |
-| `/research/add-items` | 向现有outline添加更多items |
-| `/research/add-fields` | 向现有outline添加更多fields |
-| `/research/deep` | 使用并行agents对每个item进行深度调研 |
-| `/research/report` | 从JSON结果生成markdown报告 |
+| `run /research` | 生成包含items和fields的调研outline |
+| `run /research/add-items` | 向现有outline添加更多items |
+| `run /research/add-fields` | 向现有outline添加更多fields |
+| `run /research/deep` | 使用并行agents对每个item进行深度调研 |
+| `run /research/report` | 从JSON结果生成markdown报告 |
 
 ### 安装
 
@@ -121,7 +125,7 @@ cp agents/web-search-agent.md ~/.claude/agents/
 
 #### 阶段1：生成Outline
 ```
-/research <topic>
+run /research <topic>
 ```
 - 模型知识生成初始items和字段框架
 - 网络搜索补充最新items
@@ -130,7 +134,7 @@ cp agents/web-search-agent.md ~/.claude/agents/
 
 #### 阶段2：深度调研
 ```
-/research/deep
+run /research/deep
 ```
 - 并行agents调研每个item（batch_size可配置）
 - 每个agent读取fields.yaml并输出结构化JSON
@@ -139,13 +143,13 @@ cp agents/web-search-agent.md ~/.claude/agents/
 
 #### 可选：扩展Outline
 ```
-/research/add-items    # 通过用户输入或网络搜索添加调研对象
-/research/add-fields   # 添加字段定义
+run /research/add-items    # 通过用户输入或网络搜索添加调研对象
+run /research/add-fields   # 添加字段定义
 ```
 
 #### 阶段3：生成报告
 ```
-/research/report
+run /research/report
 ```
 - 生成Python脚本将JSON转换为markdown
 - 用户选择目录中显示的摘要字段
