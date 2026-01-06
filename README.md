@@ -37,6 +37,9 @@ cp -r skills/research-en ~/.claude/skills/research
 
 # Chinese version
 cp -r skills/research-zh ~/.claude/commands/research
+
+# Required: Install agent
+cp agents/web-search-agent.md ~/.claude/agents/
 ```
 
 ### Workflow
@@ -97,6 +100,9 @@ cp -r skills/research-en ~/.claude/skills/research
 
 # 中文版
 cp -r skills/research-zh ~/.claude/commands/research
+
+# 必需：安装agent
+cp agents/web-search-agent.md ~/.claude/agents/
 ```
 
 ### 工作流
