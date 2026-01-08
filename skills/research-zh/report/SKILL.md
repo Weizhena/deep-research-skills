@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 description: 将deep调研结果汇总为markdown报告，覆盖所有字段，跳过不确定值。
 allowed-tools: Read, Write, Glob, Bash, AskUserQuestion
 ---

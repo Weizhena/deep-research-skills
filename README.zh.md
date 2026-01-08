@@ -31,15 +31,17 @@ pip install pyyaml
 
 ## 命令
 
-> **注意**：使用 `run /research` 而非直接 `/research`，因为斜杠命令与内置命令冲突。
+> **Claude Code 2.1.0+**：现已支持直接 `/research` 触发！
+>
+> **旧版本**：请使用 `run /research` 格式。
 
-| 命令 | 描述 |
-|------|------|
-| `run /research` | 生成包含items和fields的调研outline |
-| `run /research/add-items` | 向现有outline添加更多items |
-| `run /research/add-fields` | 向现有outline添加更多fields |
-| `run /research/deep` | 使用并行agents对每个item进行深度调研 |
-| `run /research/report` | 从JSON结果生成markdown报告 |
+| 命令 (2.1.0+) | 命令 (旧版本) | 描述 |
+|---------------|---------------|------|
+| `/research` | `run /research` | 生成包含items和fields的调研outline |
+| `/research:add-items` | `run /research/add-items` | 向现有outline添加更多items |
+| `/research:add-fields` | `run /research/add-fields` | 向现有outline添加更多fields |
+| `/research:deep` | `run /research/deep` | 使用并行agents对每个item进行深度调研 |
+| `/research:report` | `run /research/report` | 从JSON结果生成markdown报告 |
 
 ## 工作流 & 示例
 
@@ -47,24 +49,27 @@ pip install pyyaml
 
 ### 阶段1：生成Outline
 ```
-run /research AI Agent Demo 2025
+/research AI Agent Demo 2025
 ```
+> *旧版本: `run /research AI Agent Demo 2025`*
 💡 **发生了什么**：告诉它你要研究什么 → 它帮你列出调研清单
 
 **你会得到**：17个待调研的AI Agent清单（ChatGPT Agent、Claude Computer Use、Cursor等）+ 每个要收集哪些信息
 
 ### 阶段2：深度调研
 ```
-run /research/deep
+/research:deep
 ```
+> *旧版本: `run /research/deep`*
 💡 **发生了什么**：AI自动上网搜索每个item的详细信息，逐个完成
 
 **你会得到**：每个Agent的详细资料（公司、发布日期、定价、技术规格、用户评价...）
 
 ### 阶段3：生成报告
 ```
-run /research/report
+/research:report
 ```
+> *旧版本: `run /research/report`*
 💡 **发生了什么**：所有数据 → 一份整理好的报告
 
 **你会得到**：`report.md` - 带目录的完整Markdown报告，可直接阅读或分享

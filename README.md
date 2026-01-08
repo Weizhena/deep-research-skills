@@ -31,15 +31,17 @@ pip install pyyaml
 
 ## Commands
 
-> **Note**: Use `run /research` instead of `/research` directly, as slash commands conflict with built-in commands.
+> **Claude Code 2.1.0+**: Direct `/research` trigger is now supported!
+>
+> **Older versions**: Use `run /research` format instead.
 
-| Command | Description |
-|---------|-------------|
-| `run /research` | Generate research outline with items and fields |
-| `run /research/add-items` | Add more items to existing outline |
-| `run /research/add-fields` | Add more fields to existing outline |
-| `run /research/deep` | Deep research each item with parallel agents |
-| `run /research/report` | Generate markdown report from JSON results |
+| Command (2.1.0+) | Command (older) | Description |
+|------------------|-----------------|-------------|
+| `/research` | `run /research` | Generate research outline with items and fields |
+| `/research:add-items` | `run /research/add-items` | Add more items to existing outline |
+| `/research:add-fields` | `run /research/add-fields` | Add more fields to existing outline |
+| `/research:deep` | `run /research/deep` | Deep research each item with parallel agents |
+| `/research:report` | `run /research/report` | Generate markdown report from JSON results |
 
 ## Workflow & Example
 
@@ -47,24 +49,27 @@ pip install pyyaml
 
 ### Phase 1: Generate Outline
 ```
-run /research AI Agent Demo 2025
+/research AI Agent Demo 2025
 ```
+> *Older versions: `run /research AI Agent Demo 2025`*
 💡 **What happens**: Tell it your topic → It creates a research list for you
 
 **You get**: A list of 17 AI Agents to research (ChatGPT Agent, Claude Computer Use, Cursor, etc.) + what info to collect for each
 
 ### Phase 2: Deep Research
 ```
-run /research/deep
+/research:deep
 ```
+> *Older versions: `run /research/deep`*
 💡 **What happens**: AI automatically searches the web for each item, one by one
 
 **You get**: Detailed info for each Agent (company, release date, pricing, tech specs, reviews...)
 
 ### Phase 3: Generate Report
 ```
-run /research/report
+/research:report
 ```
+> *Older versions: `run /research/report`*
 💡 **What happens**: All data → One organized report
 
 **You get**: `report.md` - A complete markdown report with table of contents, ready to read or share
