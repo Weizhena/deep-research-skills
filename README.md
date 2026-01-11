@@ -1,4 +1,4 @@
-# Deep Research Skill for Claude Code
+# Deep Research Skill for Claude Code / OpenCode
 
 [English](README.md) | [中文](README.zh.md)
 
@@ -15,6 +15,7 @@ A structured research workflow skill for Claude Code, supporting two-phase resea
 
 ## Installation
 
+### Claude Code
 ```bash
 # English version
 cp -r skills/research-en/* ~/.claude/skills/
@@ -24,6 +25,18 @@ cp -r skills/research-zh/* ~/.claude/skills/
 
 # Required: Install agent
 cp agents/web-search-agent.md ~/.claude/agents/
+
+# Required: Install Python dependency
+pip install pyyaml
+```
+
+### OpenCode (default: gpt-5.2)
+```bash
+# Skills (same as Claude Code)
+cp -r skills/research-en/* ~/.claude/skills/   # or research-zh for Chinese
+
+# Required: Install agent
+cp agents/web-search-opencode.md ~/.config/opencode/agent/web-search.md
 
 # Required: Install Python dependency
 pip install pyyaml

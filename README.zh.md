@@ -1,4 +1,4 @@
-# Deep Research Skill for Claude Code
+# Deep Research Skill for Claude Code / OpenCode
 
 [English](README.md) | [中文](README.zh.md)
 
@@ -15,6 +15,7 @@ Claude Code 的结构化调研工作流技能，支持两阶段调研：outline�
 
 ## 安装
 
+### Claude Code
 ```bash
 # 中文版
 cp -r skills/research-zh/* ~/.claude/skills/
@@ -24,6 +25,18 @@ cp -r skills/research-en/* ~/.claude/skills/
 
 # 必需：安装agent
 cp agents/web-search-agent.md ~/.claude/agents/
+
+# 必需：安装Python依赖
+pip install pyyaml
+```
+
+### OpenCode (默认: gpt-5.2)
+```bash
+# Skills (同 Claude Code)
+cp -r skills/research-zh/* ~/.claude/skills/   # 或 research-en 英文版
+
+# 必需：安装agent
+cp agents/web-search-opencode.md ~/.config/opencode/agent/web-search.md
 
 # 必需：安装Python依赖
 pip install pyyaml
