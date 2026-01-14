@@ -2,6 +2,8 @@
 
 [English](README.md) | [中文](README.zh.md)
 
+> If you find this project helpful, please give it a star! :star:
+
 > Inspired by [RhinoInsight: Improving Deep Research through Control Mechanisms for Model Behavior and Context](https://arxiv.org/abs/2511.18743)
 
 A structured research workflow skill for Claude Code, supporting two-phase research: outline generation (extensible) and deep investigation. Human-in-the-loop design ensures precise control at every stage.

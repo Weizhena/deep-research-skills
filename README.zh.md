@@ -2,6 +2,8 @@
 
 [English](README.md) | [中文](README.zh.md)
 
+> 如果喜欢就请 star 一下吧！:star:
+
 > 灵感来源：[RhinoInsight: Improving Deep Research through Control Mechanisms for Model Behavior and Context](https://arxiv.org/abs/2511.18743)
 
 Claude Code 的结构化调研工作流技能，支持两阶段调研：outline生成（可扩展）和深度调查。人在回路设计确保每个阶段的精确控制。
