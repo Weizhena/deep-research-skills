@@ -27,8 +27,9 @@ cp -r skills/research-en/* ~/.claude/skills/
 # Chinese version
 cp -r skills/research-zh/* ~/.claude/skills/
 
-# Required: Install agent
+# Required: Install agent and modules
 cp agents/web-search-agent.md ~/.claude/agents/
+cp -r agents/web-search-modules ~/.claude/agents/
 
 # Required: Install Python dependency
 pip install pyyaml
@@ -39,8 +40,9 @@ pip install pyyaml
 # Skills (same as Claude Code)
 cp -r skills/research-en/* ~/.claude/skills/   # or research-zh for Chinese
 
-# Required: Install agent
-cp agents/web-search-opencode.md ~/.config/opencode/agent/web-search.md
+# Required: Install agent and modules
+cp agents/web-search-opencode.md ~/.config/opencode/agents/web-search.md
+cp -r agents/web-search-modules ~/.config/opencode/agents/
 
 # Required: Install Python dependency
 pip install pyyaml

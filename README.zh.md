@@ -27,8 +27,9 @@ cp -r skills/research-zh/* ~/.claude/skills/
 # 英文版
 cp -r skills/research-en/* ~/.claude/skills/
 
-# 必需：安装agent
+# 必需：安装agent和模块
 cp agents/web-search-agent.md ~/.claude/agents/
+cp -r agents/web-search-modules ~/.claude/agents/
 
 # 必需：安装Python依赖
 pip install pyyaml
@@ -39,8 +40,9 @@ pip install pyyaml
 # Skills (同 Claude Code)
 cp -r skills/research-zh/* ~/.claude/skills/   # 或 research-en 英文版
 
-# 必需：安装agent
-cp agents/web-search-opencode.md ~/.config/opencode/agent/web-search.md
+# 必需：安装agent和模块
+cp agents/web-search-opencode.md ~/.config/opencode/agents/web-search.md
+cp -r agents/web-search-modules ~/.config/opencode/agents/
 
 # 必需：安装Python依赖
 pip install pyyaml
